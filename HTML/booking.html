@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Taniti Trip</title>
+    <link rel="stylesheet" href="../CSS/booking.css">
+</head>
+<body>
+    
+    <header>
+        <a href="index.html">Home</a>
+        <a href="attractions.html">Attractions</a>
+        <a class="current_page" href="booking.html">Booking</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="about.html">About</a>
+    </header>
+
+    <div class="booking_hero">
+        <h1>Book Your Trip</h1>
+        <p>It's easier than you think</p>
+    </div>
+
+    <div class="booking_container">
+        
+        <!-- Booking Form Section -->
+        <div class="booking_form_section">
+            <h2>Let's Make This Happen</h2>
+            <p class="form_intro">Fill this out. We'll email you back. Simple as that.</p>
+            
+            <form class="booking_form">
+                <div class="form_row">
+                    <div class="form_group">
+                        <label for="first_name">First Name</label>
+                        <input type="text" id="first_name" name="first_name" required>
+                    </div>
+                    <div class="form_group">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" name="last_name" required>
+                    </div>
+                </div>
+
+                <div class="form_row">
+                    <div class="form_group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form_group">
+                        <label for="phone">Phone (Optional)</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                </div>
+
+                <div class="form_row">
+                    <div class="form_group">
+                        <label for="check_in">Check-In</label>
+                        <input type="date" id="check_in" name="check_in" required>
+                    </div>
+                    <div class="form_group">
+                        <label for="check_out">Check-Out</label>
+                        <input type="date" id="check_out" name="check_out" required>
+                    </div>
+                </div>
+
+                <div class="form_row">
+                    <div class="form_group">
+                        <label for="guests">How Many People?</label>
+                        <select id="guests" name="guests" required>
+                            <option value="">Pick one</option>
+                            <option value="1">Just me</option>
+                            <option value="2">2 people</option>
+                            <option value="3">3 people</option>
+                            <option value="4">4 people</option>
+                            <option value="5">5+ people</option>
+                        </select>
+                    </div>
+                    <div class="form_group">
+                        <label for="accommodation">Where You Staying?</label>
+                        <select id="accommodation" name="accommodation" required>
+                            <option value="">Pick one</option>
+                            <option value="hotel">Hotel</option>
+                            <option value="resort">Resort</option>
+                            <option value="hostel">Hostel</option>
+                            <option value="bed_breakfast">Bed & Breakfast</option>
+                            <option value="private_rental">Private Rental</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form_group_full">
+                    <label for="special_requests">Anything Else We Should Know?</label>
+                    <textarea id="special_requests" name="special_requests" rows="5" placeholder="Dietary stuff, accessibility needs, celebrating something, whatever..."></textarea>
+                </div>
+
+                <button type="submit" class="submit_btn">Send It</button>
+            </form>
+        </div>
+
+        <!-- Info Sidebar -->
+        <div class="booking_info">
+            <div class="info_card">
+                <h3>Getting Here</h3>
+                <p>Small airport. One ferry. Both work fine. Flight's faster, ferry's cheaper and kinda scenic.</p>
+            </div>
+
+            <div class="info_card">
+                <h3>Where to Stay</h3>
+                <p>Hotels, resorts, hostels, B&Bs, private rentals. Whatever your budget is, we've got something. Probably.</p>
+            </div>
+
+            <div class="info_card">
+                <h3>Getting Around</h3>
+                <p>Public buses run but they're slow. Rent a car or bike if you want freedom. Taxis exist. Walking works too if you're not in a hurry.</p>
+            </div>
+        </div>
+
+    </div>
+
+     <footer>
+        <p>&copy; 2024 Taniti Tourism Board. Honestly, we're just happy you're here. Photos from Unsplash https://unsplash.com/s/photos</p>
+    </footer>
+
+
+</body>
+</html>

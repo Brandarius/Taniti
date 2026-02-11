@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Taniti</title>
+    <link rel="stylesheet" href="../CSS/contact.css">
+</head>
+<body>
+    
+    <header>
+        <a href="index.html">Home</a>
+        <a href="attractions.html">Attractions</a>
+        <a href="booking.html">Booking</a>
+        <a class="current_page" href="contact.html">Contact Us</a>
+        <a href="about.html">About</a>
+    </header>
+
+    <div class="contact_hero">
+        <h1>Got Questions?</h1>
+        <p>We probably have answers</p>
+    </div>
+
+    <div class="contact_container">
+        
+        <!-- Contact Form Section -->
+        <div class="contact_form_section">
+            <h2>Send Us a Message</h2>
+            <p class="form_intro">Fill this out. We'll get back to you within a day or so.</p>
+            
+            <form class="contact_form">
+                <div class="form_group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form_row">
+                    <div class="form_group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form_group">
+                        <label for="phone">Phone (Optional)</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                </div>
+
+                <div class="form_group">
+                    <label for="subject">What's This About?</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Pick one</option>
+                        <option value="booking">Booking stuff</option>
+                        <option value="activities">Activities & tours</option>
+                        <option value="accommodations">Where to stay</option>
+                        <option value="general">General question</option>
+                        <option value="other">Something else</option>
+                    </select>
+                </div>
+
+                <div class="form_group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="8" required placeholder="What do you want to know?"></textarea>
+                </div>
+
+                <button type="submit" class="submit_button">Send It</button>
+            </form>
+        </div>
+
+        <!-- Contact Info Sidebar -->
+        <div class="contact_info_section">
+            
+            <div class="info_card">
+                <h3>Phone</h3>
+                <p>1-800-TANITI-1</p>
+                <p class="hours">Mon-Fri: 8am - 8pm<br>Weekends: 9am - 5pm</p>
+            </div>
+
+            <div class="info_card">
+                <h3>Email</h3>
+                <p>info@taniti.com</p>
+                <p class="subtext">We usually reply within 24 hours</p>
+            </div>
+
+            <div class="info_card">
+                <h3>Visit Us</h3>
+                <p>Taniti Tourism Office<br>
+                123 Paradise Boulevard<br>
+                Taniti City</p>
+                <p class="hours">Mon-Sat: 9am - 6pm</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="faq_section">
+        <h2>Quick Answers</h2>
+        <div class="faq_grid">
+            
+            <div class="faq_item">
+                <h3>Best time to visit?</h3>
+                <p>November to April is dry and sunny. May to October is greener and less crowded. Both are fine, honestly.</p>
+            </div>
+
+            <div class="faq_item">
+                <h3>Need a visa?</h3>
+                <p>Most people can stay 90 days without one. Check with your embassy to be sure.</p>
+            </div>
+
+            <div class="faq_item">
+                <h3>What currency?</h3>
+                <p>Taniti Dollars, but US Dollars work everywhere. Credit cards are fine at most places.</p>
+            </div>
+
+            <div class="faq_item">
+                <h3>Family-friendly?</h3>
+                <p>Yeah. Beaches, museums, activities for kids. It's not just for couples on honeymoon.</p>
+            </div>
+
+            <div class="faq_item">
+                <h3>What language?</h3>
+                <p>English works. Locals speak Tanitian but everyone in tourism speaks English.</p>
+            </div>
+
+            <div class="faq_item">
+                <h3>Getting around?</h3>
+                <p>Rent a car, take a taxi, ride a bus, bike it. Whatever works for you.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Taniti Tourism Board. Honestly, we're just happy you're here. Photos from Unsplash https://unsplash.com/s/photos</p>
+    </footer>
+
+</body>
+</html>

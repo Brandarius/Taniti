@@ -1,137 +1,117 @@
-/* ===== General Reset ===== */
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    box-sizing: border-box;
 }
 
-/* ===== Header ===== */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin-top: 80px;
+}
+
 header {
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;          /* stretch across the page */
-    border-bottom: 3px solid black;
-    background-color: white;
-    z-index: 1000;        /* keep it above other elements */
-    display: flex;
-    justify-content: center;
-    gap: 10%;
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid #e0e0e0;
     padding: 20px 0;
-}
-body {
-    margin-top: 80px;      /* give space so content doesn’t hide under navbar */
-}
-
-.current_page {
-    color:aqua;
+    z-index: 100;
+    text-align: center;
 }
 
 header a {
     text-decoration: none;
     color: #333;
-    font-weight: bold;
-    padding: 5px 10px;
-    transition: 1.5s;
-    color: black;
+    font-weight: 500;
+    margin: 0 25px;
+    transition: color 0.2s;
+    font-size: large;
 }
+
 header a:hover {
-    transform: scale(1.5);
+    color: #00a8e8;
+}
+
+.current_page {
+    color: #00a8e8;
 }
 
 .intro {
     text-align: center;
-    color: aqua;
+    font-size: 3em;
+    margin: 50px 0 30px;
+    color: #00a8e8;
 }
 
-/* ===== Booking Button ===== */
 .booking_button {
-    text-align: center;                  /* center the button horizontally */
-    margin-top: 90px;   
-    margin-bottom: 100px;     
-    background-image: url("../Images/defaultpic.png");
-    background-size: contain;            /* show the full image */
-    background-position: center;         /* center it inside the div */
-    background-repeat: no-repeat;        /* no tiling */
-    padding: 100px 0;                    /* height to display the image */
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto 70px;
+    background: url("../Images/Mountainous_Island.jpg") center/cover;
+    height: 500px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border: 3px solid black;
 }
 
 .booking_button button {
-    padding: 20px 50px;
-    font-size: x-large;
-    font-weight: 200;
-    border-radius: 15px;
-    border: 5px solid rgb(106, 198, 255);
+    padding: 16px 50px;
+    font-size: 1.2em;
+    font-weight: 600;
+    border: green;
+    border: 3px solid yellow;
+    background: none;
+    color: white;
     cursor: pointer;
-    color: black;
-    transition: transform 2s; /* slow grow */
-    background-color: transparent;
+    transition: transform 0.6s ease-in-out;
 }
+
 
 .booking_button button:hover {
-    transform: scale(1.5); /* double size over 5 seconds */
+    transform: scale(1.5);
 }
 
-
-.inline_images {
-    margin-top: 90px;
-    display: flex;
-    justify-content: center;
-    gap: 40px;       /* space between blocks */
-    flex-wrap: wrap; /* wraps if screen is small */
-}
-
-.image_block {
-    text-align: center; /* centers caption under image */
-    transition: transform 1.2s;
-}
-
-.image_block:hover {
-    transform: scale(1.2);
-    
-}
-
-.image_block img {
-
-    display: block;
-    width: 300px;
-    height: auto;
-    margin-bottom: 10px; /* space between image and caption */
-    border: 1px solid black;
-    border-radius: 15px;
-
-}
-
-
-.image_block p {
-    margin: 0;
-    font-size: 1rem;
-    color: #555;
-    padding-bottom: 50px;
-}
-
-
-/* ===== Taniti Guide Text ===== */
 .taniti_guide {
-    max-width: 800px;
-    margin: 0 auto 50px;
-    padding: 0 20px;
-    line-height: 1.6;
+    max-width: 750px;
+    margin: 60px auto;
+    padding: 0 25px;
+    line-height: 1.65;
+}
+
+.taniti_guide h3 {
+    margin-bottom: 15px;
     color: #333;
 }
 
-/* ===== Reviews Section ===== */
-.reviews {
-    max-width: 800px;
-    margin: 0 auto 50px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    line-height: 1.5;
-    color: #333;
-    border-radius: 10px;
-    border: dotted 2px;
-}
 .reviewh3 {
-    margin-left: 22%;
+    text-align: center;
+    font-size: 1.8em;
+    margin: 60px 0 30px;
+}
+
+.reviews {
+    max-width: 750px;
+    margin: 0 auto 80px;
+    padding: 40px;
+    background: white;
+    border: 3px dotted;
+    line-height: 1.6;
+}
+
+.reviews p {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 35px 20px;
+    background: #2a2a2a;
+    color: #aaa;
+    margin-top: 60px;
 }
